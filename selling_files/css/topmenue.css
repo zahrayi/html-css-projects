@@ -1,0 +1,94 @@
+#topmenue {
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  /* برای اینکه منو بار همیشه بالای مرورگر بمونه حتی اگر پایین اسکرول کنیم */
+  /* background: khaki; */
+  box-shadow: 0 0 10px 0.1px #145214;
+  /* سایه از هر طرف یدونه مونده به اخری شفافیت و اخری رنگ سایه */
+  z-index: 1000;
+  background: #e2ece9;
+}
+.topmenue {
+  width: 1170px;
+  /* حدود هشتادو و یا سه درصد عرض بادی */
+  height: 100%;
+  margin: 0 auto;
+  /* برای اینکه وسط بیافته */
+  /* background: saddlebrown; */
+}
+.topmenue > ul {
+  width: 100%;
+}
+.topmenue > ul > li {
+  float: right;
+}
+.topmenue > ul > li > a {
+  line-height: 40px;
+  /* چون ارتفاع منو بار 40 پیکسل هست اینم 40 بدیم میافته وسطش دقیقا */
+  color: #145214;
+  font-size: 18px;
+  margin-left: 30px;
+}
+.topmenue > ul > li > a:hover {
+  color: #8bbbb8;
+}
+.search {
+  float: left;
+  line-height: 40px;
+}
+.search > form > input {
+  border: 1px solid #8bbbb8;
+  border-radius: 10px;
+  padding: 2px 5px;
+  /* اولی بالا دومی چپ و راست */
+  font-family: far;
+  font-size: 14px;
+  width: 200px;
+}
+.search > form > input:focus {
+  outline: none;
+}
+/* *************banner*********** */
+#banner {
+  width: 100%;
+  height: 120px;
+  position: relative;
+  top: 40px;
+  /* چون منو ما ارتفاعش 40 بود ینو 40 تا فاصله دادیم که بیاد زیرش */
+  background: url("/img/canva-blue-aesthetic-email-header-rpyghsOuOM0.jpg")
+    no-repeat 0 40px fixed;
+  opacity: 80%;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+.banner {
+  max-width: max-content;
+  /* margin: 0 auto; */
+  /* برای اینکه وسط بنر بیافته */
+  line-height: 120px;
+  position: fixed;
+}
+.banner > .title {
+  margin: 0 auto;
+}
+.banner > .title > a {
+  color: #045638;
+  text-align: center;
+  font-size: 34px;
+}
+.logo {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 0;
+  left: 630px;
+  /* برای اینکه بچسبه به بالا سمت چپ */
+  background: url(/img/sneaking-tiger-mascot-by-lei-brandcrowd.png) no-repeat;
+  background-size: contain;
+  opacity: 80%;
+}
+.logo:hover {
+  opacity: 100%;
+}

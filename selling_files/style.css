@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "far";
+  src: url("./fonts/Yekan.eot") format("eot"),
+    url("./fonts/Yekan.ttf") format("ttf"),
+    url("./fonts/Yekan.woff") format("woff");
+}
+@font-face {
+  font-family: "farn";
+  src: url("./fonts/Yekan-Numbers\ Regular.eot") format("eot"),
+    url("./fonts/Yekan-Numbers\ Regular.ttf") format("ttf"),
+    url("./fonts/Yekan-Numbers\ Regular.woff") format("woff");
+}
+/* استایل های مشترک */
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 150%;
+  font-size: 100%;
+  direction: rtl;
+  font-family: far, tahoma;
+  /* اگر به هر دلیلی فر در دسترس نبود تاهما نمایش بده فونتارو */
+  background: #f1fffa;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+li {
+  margin: 0;
+  padding: 0;
+}
+a {
+  display: block;
+  /* باعث میشه برای کلیک کردن کل المان رو در نظر بگیره */
+  text-decoration: none;
+  /* که زیرش خط نکشه */
+  transition: all 0.3 ease-in-out;
+  -webkit-transition: all 0.3 ease-in-out;
+  /* برای کروم */
+  -moz-transition: all 0.3 ease-in-out;
+  /*وزیلا فایرفاکس  */
+  -o-transition: all 0.3 ease-in-out;
+  /* اوپرا */
+}

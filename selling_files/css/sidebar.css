@@ -1,0 +1,74 @@
+.sidebar {
+  background: #e2ece9;
+  box-shadow: 0 -20px 30px #9bdfda inset;
+  /*   پراکندگی هم 30 پیکسل چپ و راست سایه نداره منفی بیست تا سایه سمت بالا و  */
+  /* برای اینکه سایه به داخل باشه از منفی و inset استفاده شد */
+  margin-bottom: 30px;
+}
+.sidebar_title {
+  margin: 0px;
+  padding: 10px;
+  background: #4d908e;
+  color: #f1fff1;
+  font-weight: lighter;
+}
+.sidebar > ul > li > a {
+  padding: 5px 10px;
+  /* از بالا و پایین 5 پیکسل از چپ و راست 10 پیکسل */
+  color: #144551;
+}
+.sidebar > ul > li > a:hover {
+  background: #9bdfda;
+}
+.main_sidebar {
+  width: 350px;
+  /* height: 600px; */
+  /* background: forestgreen; */
+  float: left;
+}
+.sidebar_comm-img {
+  margin-bottom: 30px;
+}
+.sidebar_comm-txt {
+  margin-bottom: 30px;
+}
+.sidebar_comm-img > a > img {
+  width: 100%;
+}
+.sidebar_comm-txt a {
+  padding: 5px 10px;
+  color: #144551;
+}
+/* اون nth-child(1) یعنی اولین بچه ای که li داره */
+.sidebar_comm-txt ul li:nth-child(1) > a {
+  border-right: 5px solid #f71836;
+  background: #f6dade;
+}
+.sidebar_comm-txt ul li:nth-child(1):hover > a {
+  background: #f71836;
+  color: #f1fff1;
+}
+.sidebar_comm-txt ul li:nth-child(2) > a {
+  border-right: 5px solid #5318f7;
+  background: #e6dff8;
+}
+.sidebar_comm-txt ul li:nth-child(2):hover > a {
+  background: #5318f7;
+  color: #f1fff1;
+}
+.sidebar_comm-txt ul li:nth-child(3) > a {
+  border-right: 5px solid #f80ba9;
+  background: #f9e7f3;
+}
+.sidebar_comm-txt ul li:nth-child(3):hover > a {
+  background: #f80ba9;
+  color: #f1fff1;
+}
+.sidebar_comm-txt ul li:nth-child(4) > a {
+  border-right: 5px solid #2cc2f8;
+  background: #d3f3ff;
+}
+.sidebar_comm-txt ul li:nth-child(4):hover > a {
+  background: #2cc2f8;
+  color: #f1fff1;
+}

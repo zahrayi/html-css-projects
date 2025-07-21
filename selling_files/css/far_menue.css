@@ -1,0 +1,83 @@
+#far_menue {
+  position: relative;
+  width: 100%;
+  height: 45px;
+  background: #144552;
+  top: 40px;
+}
+.far_menue {
+  width: 1170px;
+  height: 100%;
+  margin: 0 auto;
+}
+.far_menue > ul > li {
+  float: right;
+  height: 100%;
+}
+.far_menue > ul > li > a {
+  margin-left: 30px;
+  color: #f1fffa;
+  line-height: 45px;
+  font-size: 18px;
+}
+.far_menue > ul > li > a:hover {
+  color: #8bbbb9;
+}
+.far_menue > ul {
+  width: 100%;
+  height: 100%;
+}
+.far_menue > ul > li > ul {
+  position: absolute;
+  width: 100%;
+  right: 0;
+  top: 100%;
+  background: #e2ece9;
+  z-index: 100;
+  display: flex;
+  flex-flow: wrap;
+  /* اگر عکسا تو یه سطر جا نشن از wrap استفاده میکنیم چون تو قخص ممکنه بعضی عکسا حذف بشن */
+  justify-content: space-around;
+  /* برای اینکه فاصله ها یکسان باشن اسپیس اروند میزنیم */
+  border-bottom: 1px solid #8bbbb9;
+  box-shadow: 0 0 30px #144552;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3 ease-in-out;
+  -webkit-transition: all 0.3 ease-in-out;
+  /* برای کروم */
+  -moz-transition: all 0.3 ease-in-out;
+  /*وزیلا فایرفاکس  */
+  -o-transition: all 0.3 ease-in-out;
+  /* اوپرا */
+}
+.far_menue > ul > li > ul > li {
+  /* float: right; */
+  /* وقتی display flex استفاده میکنیم فلوت رو نمیخواهیم دیگه */
+  margin: 20px;
+}
+.far_menue .title {
+  margin-top: 20px;
+  color: #144552;
+  font-size: 18px;
+}
+.far_menue > ul > li > ul > li > a > img {
+  border-radius: 30px;
+}
+.far_menue > ul > li > ul > li:hover > a > img {
+  box-shadow: 2px 2px 15px #144552;
+}
+.far_menue > ul > li > ul > li:hover > .title {
+  color: #8bbbb9;
+}
+.far_menue > ul > li:hover > ul {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.3 ease-in-out;
+  -webkit-transition: all 0.3 ease-in-out;
+  /* برای کروم */
+  -moz-transition: all 0.3 ease-in-out;
+  /*وزیلا فایرفاکس  */
+  -o-transition: all 0.3 ease-in-out;
+  /* اوپرا */
+}
